@@ -1,3 +1,37 @@
-<resources>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="app_name">Just Java</string>
+
+    <string name="what_is_your_name">What is your name?</string>
+
+    <string name="toppings">Toppings</string>
+
+    <string name="whipped_cream">Whipped Cream</string>
+
+    <string name="chocolate">Chocolate</string>
+
+    <string name="quantity">Quantity</string>
+
+    <string name="default_quantity">1</string>
+
+    <string name="minus">-</string>
+
+    <string name="add">+</string>
+
+    <string name="placeOrder">Order</string>
+
+    <string name="order_summary_name">Name: <xliff:g id="name" example="Amy">%s</xliff:g></string>
+    <string name="order_summary_whipped_cream">Add whipped cream? <xliff:g id="addWhippedCream" example="yes"> </xliff:g></string>
+    <string name="order_summary_chocolate">Add chocolate? <xliff:g id="addChocolate" example="yes"> </xliff:g></string>
+    <string name="order_summary_quantity">Quantity: <xliff:g id="quantity" example="1">%d</xliff:g></string>
+    <string name="order_summary_price">Total: <xliff:g id="price" example="$5.00">%s</xliff:g></string>
+
+    <string name="thank_you">Thank you very much!</string>
+
+    <string name="order_summary_email_subject">Just Java order for <xliff:g id="name" example="Amy">%s</xliff:g></string>
+
+    <string name="less_than_1_coffee">"You cannot have less than 1 coffee"</string>
+    <string name="more_than_100_coffee">"You cannot have more than 100 coffees</string>
+
+    <string name="toppings_yes">Yes</string>
+    <string name="toppings_no">No</string>
 </resources>

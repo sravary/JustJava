@@ -18,7 +18,7 @@
             android:layout_marginStart="16dp"
             android:layout_marginLeft="16dp"
             android:layout_marginTop="24dp"
-            android:hint="What is your name?"
+            android:hint="@string/what_is_your_name"
             android:inputType="textCapWords" />
 
         <TextView
@@ -28,7 +28,7 @@
             android:layout_marginLeft="16dp"
             android:layout_marginTop="16dp"
             android:layout_marginBottom="16dp"
-            android:text="Toppings"
+            android:text="@string/toppings"
             android:textAllCaps="true" />
 
         <CheckBox
@@ -40,7 +40,7 @@
             android:paddingStart="24dp"
             android:paddingEnd="24dp"
             android:paddingLeft="24dp"
-            android:text="Whipped Cream"
+            android:text="@string/whipped_cream"
             android:textSize="16sp" />
         <CheckBox
             android:id="@+id/chocolate_checkbox"
@@ -51,7 +51,7 @@
             android:paddingStart="24dp"
             android:paddingEnd="24dp"
             android:paddingLeft="24dp"
-            android:text="Chocolate"
+            android:text="@string/chocolate"
             android:textSize="16sp" />
 
         <TextView
@@ -61,7 +61,7 @@
             android:layout_marginLeft="16dp"
             android:layout_marginTop="16dp"
             android:layout_marginBottom="16dp"
-            android:text="Quantity"
+            android:text="@string/quantity"
             android:textAllCaps="true" />
 
         <LinearLayout
@@ -75,7 +75,7 @@
                 android:layout_marginStart="16dp"
                 android:layout_marginLeft="16dp"
                 android:onClick="decrement"
-                android:text="-" />
+                android:text="@string/minus" />
 
             <TextView
                 android:id="@+id/quantity_text_view"
@@ -83,7 +83,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
                 android:layout_marginLeft="16dp"
-                android:text="1"
+                android:text="@string/default_quantity"
                 android:textColor="#000"
                 android:textSize="16sp" />
 
@@ -93,29 +93,9 @@
                 android:layout_marginStart="16dp"
                 android:layout_marginLeft="16dp"
                 android:onClick="increment"
-                android:text="+" />
+                android:text="@string/add" />
 
         </LinearLayout>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginLeft="16dp"
-            android:layout_marginTop="16dp"
-            android:layout_marginBottom="16dp"
-            android:text="Order Summary"
-            android:textAllCaps="true" />
-
-        <TextView
-            android:id="@+id/order_summary_text_view"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginLeft="16dp"
-            android:text="$5.00"
-            android:textColor="#000"
-            android:textSize="16sp" />
 
         <Button
             android:layout_width="wrap_content"
@@ -124,6 +104,6 @@
             android:layout_marginLeft="16dp"
             android:layout_marginTop="16dp"
             android:onClick="submitOrder"
-            android:text="Order" />
+            android:text="@string/placeOrder" />
     </LinearLayout>
 </ScrollView>
