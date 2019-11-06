@@ -3,11 +3,31 @@
 
     <string name="what_is_your_name">What is your name?</string>
 
+    <string name="type_of_coffee">Type (pick one)</string>
+
+    <string name="cafe_latte">Café Latte</string>
+
+    <string name="cappuccino">Cappuccino</string>
+
+    <string name="regular_joe">Regular Joe</string>
+
+    <string name="size_of_coffee">Size</string>
+
+    <string name="small">Small</string>
+
+    <string name="medium">Medium</string>
+
+    <string name="large">Large</string>
+
     <string name="toppings">Toppings</string>
 
     <string name="whipped_cream">Whipped Cream</string>
 
     <string name="chocolate">Chocolate</string>
+
+    <string name="cinnamon">Cinnamon</string>
+
+    <string name="nutmeg">Nutmeg</string>
 
     <string name="quantity">Quantity</string>
 
@@ -20,18 +40,29 @@
     <string name="placeOrder">Order</string>
 
     <string name="order_summary_name">Name: <xliff:g id="name" example="Amy">%s</xliff:g></string>
+
+    <string name="order_summary_cappuccino">Cappuccino? <xliff:g id="addCappuccino" example="yes"> </xliff:g></string>
+    <string name="order_summary_regular_joe">Regular Joe? <xliff:g id="addRegularJoe" example="yes"> </xliff:g></string>
+
+    <string name="order_summary_small_cup">Small? <xliff:g id="addSmallCup" example="yes"> </xliff:g></string>
+    <string name="order_summary_medium_cup">Medium? <xliff:g id="addMediumCup" example="yes"> </xliff:g></string>
+    <string name="order_summary_large_cup">Large? <xliff:g id="addLargeCup" example="yes"> </xliff:g></string>
+
     <string name="order_summary_whipped_cream">Add whipped cream? <xliff:g id="addWhippedCream" example="yes"> </xliff:g></string>
     <string name="order_summary_chocolate">Add chocolate? <xliff:g id="addChocolate" example="yes"> </xliff:g></string>
+    <string name="order_summary_cinnamon">Add cinnamon? <xliff:g id="addCinnamon" example="yes"> </xliff:g></string>
+    <string name="order_summary_nutmeg">Add nutmeg? <xliff:g id="addNutmeg" example="yes"> </xliff:g></string>
     <string name="order_summary_quantity">Quantity: <xliff:g id="quantity" example="1">%d</xliff:g></string>
     <string name="order_summary_price">Total: <xliff:g id="price" example="$5.00">%s</xliff:g></string>
 
     <string name="thank_you">Thank you very much!</string>
 
-    <string name="order_summary_email_subject">Just Java order for <xliff:g id="name" example="Amy">%s</xliff:g></string>
+    <string name="order_summary_email_subject">Just Java order for <xliff:g id="name" example="Amy"> </xliff:g></string>
 
     <string name="less_than_1_coffee">"You cannot have less than 1 coffee"</string>
     <string name="more_than_100_coffee">"You cannot have more than 100 coffees</string>
 
     <string name="toppings_yes">Yes</string>
     <string name="toppings_no">No</string>
+    <string name="order_summary_cafe_latte">Café Latte? <xliff:g id="addCafeLatte" example="yes"> </xliff:g></string>
 </resources>

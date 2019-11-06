@@ -21,4 +21,22 @@
     <string name="more_than_100_coffee">Vous ne pouvez pas avoir plus de 100 cafés</string>
     <string name="toppings_no">Non</string>
     <string name="toppings_yes">Oui</string>
+    <string name="cinnamon">Cannelle</string>
+    <string name="nutmeg">Noix de muscade</string>
+    <string name="order_summary_cinnamon">Ajouter la cannelle? <xliff:g id="addCinnamon" example="oui"> </xliff:g></string>
+    <string name="order_summary_nutmeg">Ajouter la noix de muscade? <xliff:g id="addNutmeg" example="oui"> </xliff:g></string>
+    <string name="size_of_coffee">Taille</string>
+    <string name="type_of_coffee">Type</string>
+    <string name="cafe_latte">Café Latte</string>
+    <string name="cappuccino">Cappuccino</string>
+    <string name="regular_joe">Café régulier</string>
+    <string name="large">Large</string>
+    <string name="medium">Moyen</string>
+    <string name="small">Petit</string>
+    <string name="order_summary_cafe_latte">Café Latte? <xliff:g id="addCafeLatte" example="oui"> </xliff:g></string>
+    <string name="order_summary_cappuccino">Cappuccino? <xliff:g id="addCappuccino" example="oui"> </xliff:g></string>
+    <string name="order_summary_large_cup">Large? <xliff:g id="addLargeCup" example="oui"> </xliff:g></string>
+    <string name="order_summary_medium_cup">Moyen? <xliff:g id="addMediumCup" example="oui"> </xliff:g></string>
+    <string name="order_summary_regular_joe">Café régulier? <xliff:g id="addRegularJoe" example="oui"> </xliff:g></string>
+    <string name="order_summary_small_cup">Petit? <xliff:g id="addSmallCup" example="oui"> </xliff:g></string>
 </resources>

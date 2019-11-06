@@ -1,109 +1,261 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity" >
 
     <LinearLayout
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:orientation="vertical" >
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            style="@style/BannerImage"
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+            android:scaleType="centerCrop"></ImageView>
 
         <EditText
+            style="@style/TextColorWhite"
             android:id="@+id/name_field"
             android:layout_width="380dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:layout_marginLeft="16dp"
             android:layout_marginTop="24dp"
+            android:textColorHint="@android:color/white"
             android:hint="@string/what_is_your_name"
             android:inputType="textCapWords" />
 
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            style="@style/HeaderTextStyle"
             android:layout_marginStart="16dp"
-            android:layout_marginLeft="16dp"
-            android:layout_marginTop="16dp"
-            android:layout_marginBottom="16dp"
-            android:text="@string/toppings"
-            android:textAllCaps="true" />
-
-        <CheckBox
-            android:id="@+id/whipped_cream_checkbox"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginLeft="16dp"
-            android:paddingStart="24dp"
-            android:paddingEnd="24dp"
-            android:paddingLeft="24dp"
-            android:text="@string/whipped_cream"
-            android:textSize="16sp" />
-        <CheckBox
-            android:id="@+id/chocolate_checkbox"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginLeft="16dp"
-            android:paddingStart="24dp"
-            android:paddingEnd="24dp"
-            android:paddingLeft="24dp"
-            android:text="@string/chocolate"
-            android:textSize="16sp" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginLeft="16dp"
-            android:layout_marginTop="16dp"
-            android:layout_marginBottom="16dp"
-            android:text="@string/quantity"
-            android:textAllCaps="true" />
+            android:layout_marginEnd="16dp"
+            android:text="@string/type_of_coffee" />
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
 
-            <Button
-                android:layout_width="48dp"
-                android:layout_height="48dp"
-                android:layout_marginStart="16dp"
-                android:layout_marginLeft="16dp"
-                android:onClick="decrement"
-                android:text="@string/minus" />
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
 
-            <TextView
-                android:id="@+id/quantity_text_view"
+                <RadioButton
+                    style="@style/TextColorWhite"
+                    android:id="@+id/cafe_latte_radio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:paddingStart="24dp"
+                    android:paddingLeft="24dp"
+                    android:paddingEnd="24dp"
+                    android:text="@string/cafe_latte"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:textSize="16sp"
+                    android:buttonTint="@color/colorAccent" />
+
+                <RadioButton
+                    style="@style/TextColorWhite"
+                    android:id="@+id/cappuccino_radio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:paddingStart="24dp"
+                    android:paddingLeft="24dp"
+                    android:paddingEnd="24dp"
+                    android:text="@string/cappuccino"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:textSize="16sp"
+                    android:buttonTint="@color/colorAccent"/>
+
+                <RadioButton
+                    style="@style/TextColorWhite"
+                    android:id="@+id/regular_joe_radio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:paddingStart="24dp"
+                    android:paddingLeft="24dp"
+                    android:paddingEnd="24dp"
+                    android:text="@string/regular_joe"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:textSize="16sp"
+                    android:buttonTint="@color/colorAccent"/>
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <TextView
+            style="@style/HeaderTextStyle"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:text="@string/size_of_coffee" />
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                style="@style/TextColorWhite"
+                android:id="@+id/small_radio"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
                 android:layout_marginLeft="16dp"
-                android:text="@string/default_quantity"
-                android:textColor="#000"
-                android:textSize="16sp" />
+                android:padding="8dp"
+                android:text="@string/small"
+                android:textSize="16sp"
+                android:buttonTint="@color/colorAccent"/>
 
-            <Button
-                android:layout_width="48dp"
-                android:layout_height="48dp"
+            <RadioButton
+                style="@style/TextColorWhite"
+                android:id="@+id/medium_radio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
                 android:layout_marginLeft="16dp"
-                android:onClick="increment"
-                android:text="@string/add" />
+                android:padding="8dp"
+                android:text="@string/medium"
+                android:textSize="16sp"
+                android:buttonTint="@color/colorAccent" />
 
-        </LinearLayout>
+            <RadioButton
+                style="@style/TextColorWhite"
+                android:id="@+id/large_radio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:padding="8dp"
+                android:text="@string/large"
+                android:textSize="16sp"
+                android:buttonTint="@color/colorAccent" />
 
-        <Button
+        </RadioGroup>
+
+        <TextView
+            style="@style/HeaderTextStyle"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:text="@string/toppings" />
+
+        <CheckBox
+            style="@style/TextColorWhite"
+            android:id="@+id/whipped_cream_checkbox"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:layout_marginLeft="16dp"
+            android:paddingStart="24dp"
+            android:paddingLeft="24dp"
+            android:paddingEnd="24dp"
+            android:text="@string/whipped_cream"
+            android:textSize="16sp"
+            android:buttonTint="@color/colorAccent"/>
+
+        <CheckBox
+            style="@style/TextColorWhite"
+            android:id="@+id/chocolate_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:paddingStart="24dp"
+            android:paddingLeft="24dp"
+            android:paddingEnd="24dp"
+            android:text="@string/chocolate"
+            android:textSize="16sp"
+            android:buttonTint="@color/colorAccent"/>
+
+        <CheckBox
+            style="@style/TextColorWhite"
+            android:id="@+id/cinnamon_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:paddingStart="24dp"
+            android:paddingLeft="24dp"
+            android:paddingEnd="24dp"
+            android:text="@string/cinnamon"
+            android:textSize="16sp"
+            android:buttonTint="@color/colorAccent"/>
+
+        <CheckBox
+            style="@style/TextColorWhite"
+            android:id="@+id/nutmeg_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:paddingStart="24dp"
+            android:paddingLeft="24dp"
+            android:paddingEnd="24dp"
+            android:text="@string/nutmeg"
+            android:textSize="16sp"
+            android:buttonTint="@color/colorAccent"/>
+
+        <TextView
+            style="@style/HeaderTextStyle"
+            android:layout_gravity="center"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:text="@string/quantity" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/roundedbutton"
+                android:onClick="decrement"
+                android:text="@string/minus"
+                android:textColor="@android:color/white" />
+
+            <TextView
+                style="@style/TextColorWhite"
+                android:id="@+id/quantity_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:padding="16dp"
+                android:text="@string/default_quantity"
+                android:textSize="24sp" />
+
+            <Button
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/roundedbutton"
+                android:onClick="increment"
+                android:text="@string/add"
+                android:textColor="@android:color/white" />
+
+        </LinearLayout>
+
+        <Button
+            android:layout_width="380dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
             android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/roundedbutton"
             android:onClick="submitOrder"
-            android:text="@string/placeOrder" />
+            android:text="@string/placeOrder"
+            android:textSize="20sp"
+            android:textColor="@android:color/white" />
     </LinearLayout>
 </ScrollView>
